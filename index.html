@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Myportofolio</title>
+    <!-- favicon xD :) -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- cdn icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- end cdn icon -->
+  </head>
+  <body onmousedown='return false;' onselectstart='return false;' oncontextmenu="return false">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+//for right click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+    </script>
+    <!-- tilt animation3d -->
+    <!-- my navbar -->
+    <div class="container col-md">
+      <nav class="navbar navbar-expand-md navbar-dark shadow sticky-top " style="background-color:rgb(15, 2, 70)">
+        <a class="navbar-brand" href="main2.html">
+          <img src="img/index.png" width="50">
+          Ridho Azhar Megantara
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/ridho-azhar-megantara-43b74b19b"><i
+                  class="bi bi-linkedin"></i>LinkedIn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/geekmicrosystem"><i class="bi bi-github"></i>Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+      
+          </ul>
+        </div>
+      </nav>
+
+     <!-- end of navbar -->
+
+      <!-- jumbotron -->
+
+      <section class="jumbotron text-center">
+        <img data-aos="fade-in" data-aos-offset="200" src="img/lulus4.jpg" alt="megantara" width="150" class="rounded-circle">
+        <!-- <h1>Portofolio</h1> -->
+        <h1>Ridho Azhar Megantara</h1>
+        <p class="lead">Hardwere engineer|Web developer|Embeded programer</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#0f0246" fill-opacity="1"
+            d="M0,320L360,224L720,256L1080,96L1440,32L1440,320L1080,320L720,320L360,320L0,320Z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#0f0246" fill-opacity="1" d="M0,0L360,32L720,224L1080,256L1440,288L1440,0L1080,0L720,0L360,0L0,0Z">
+          </path>
+        </svg>
+      </section>
+        <!-- end of jumbotron -->
+        <!-- about -->
+        <section id="about">
+          <div class="container ">
+            <div class="row text-center">
+              <div class="col">
+                <h2>About Me</h2>
+              </div>
+              <div class="row justify-content-center fs-9 text-center" data-aos="fade-down" data-aos-duration="1500">
+                <div class="col-md-4">
+                  I am a D3 graduate majoring in electrical engineering at the State Electronics Polytechnic, Surabaya graduated
+                  in 2021. My background is working as a hardware engineer in a robot pens laboratory in the humanoid robot
+                  division. In addition, I have experience as a Backend developer as a frelence.
+                  My experience as a hardware engineer for more than 1.5 years in a robot pens laboratory has brought PENS to
+                  the first place in the national level robot competition organized by ristekdikti.
+        
+                </div>
+                <div class="col-md-4">
+                  I also took part in the collaboration between Pens and PT. Insera Sena for electric bicycles. In developing an
+                  electric bicycle dashboard as a final project that was given to me by the lecturer. I developed a lot of
+                  hardware devices needed with the latest technology that I applied to the electric bicycle dashboard that I
+                  created. Regarding my final project, it also led me to get a d3 degree from a polytechnic electronics surabaya
+                  can be seen below.
+                </div>
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0f0246" fill-opacity="1"
+              d="M0,224L360,192L720,256L1080,0L1440,128L1440,320L1080,320L720,320L360,320L0,320Z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0f0246" fill-opacity="1"
+              d="M0,320L102.9,160L205.7,256L308.6,128L411.4,64L514.3,224L617.1,192L720,256L822.9,224L925.7,160L1028.6,32L1131.4,256L1234.3,64L1337.1,32L1440,256L1440,0L1337.1,0L1234.3,0L1131.4,0L1028.6,0L925.7,0L822.9,0L720,0L617.1,0L514.3,0L411.4,0L308.6,0L205.7,0L102.9,0L0,0Z">
+            </path>
+          </svg>
+        </section>
+<!-- end of about -->
+
+ <!-- project -->
+<section id="projects">
+  <div class="jekpro">
+    <div class="row text-center mb-2">
+      <div class="col">
+        <h3>My Project</h3>
+      </div>
+      
+    </div>
+    <div class="row text-center shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="col-md-4 mb-3">
+        <div class="card " style="width: 18rem;" data-aos-duration="1000" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+          <img src="img/pjt8.JPG" class="card-img-top" alt="project1">
+          <div class="card-body">
+            <h5 class="card-title">online vacination App</h5>
+            <p class="card-text">In this project, it was created to fulfill requests for vaccination participants </p>
+            <a href="project.html" class="btn btn-primary">more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;" data-aos-duration="2500" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+          <img src="img/pjt3.JPG" class="card-img-top" alt="project2">
+          <div class="card-body">
+            <h5 class="card-title">online regisration</h5>
+            <p class="card-text">in this project, an online registration system was created to meet the request of the East Java </p>
+            <a href="project.html" class="btn btn-primary">more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;" data-aos-duration="3000" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+          <img src="img/dsb1.JPG" class="card-img-top" alt="project3">
+          <div class="card-body">
+            <h5 class="card-title">electric bicycle dasboard</h5>
+            <p class="card-text">This project is a final project to obtain a D3 degree from the State Electronics Polytechnic of Surabaya.</p>
+            <a href="project.html" class="btn btn-primary">more</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f0246" fill-opacity="1" d="M0,224L360,192L720,256L1080,0L1440,128L1440,320L1080,320L720,320L360,320L0,320Z"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f0246" fill-opacity="1" d="M0,320L102.9,160L205.7,256L308.6,128L411.4,64L514.3,224L617.1,192L720,256L822.9,224L925.7,160L1028.6,32L1131.4,256L1234.3,64L1337.1,32L1440,256L1440,0L1337.1,0L1234.3,0L1131.4,0L1028.6,0L925.7,0L822.9,0L720,0L617.1,0L514.3,0L411.4,0L308.6,0L205.7,0L102.9,0L0,0Z"></path></svg>  
+  
+</section>
+ <!-- end of project -->
+
+    <!-- contact -->
+<script src="vanilla-tilt.min.js" integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+VanillaTilt.init(document.querySelectorAll('.kotak'), {
+    max: 25,
+    speed: 400
+});
+	//It also supports NodeList
+	// VanillaTilt.init(document.querySelectorAll(".img"));
+</script>
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            
+            <h2>contact me</h2>
+            <div class="kotak">
+              <img src="img/wa.JPG" alt="img" class="img"> 
+            </div>
+            <div class="kotak">
+              <img src="img/ig.JPG" alt="img" class="img">
+            </div>
+            <br>
+            <br>
+            <br>
+            <a href=""><i class="bi bi-instagram"></i>instagram</a>
+            <p>azhar_megantara</p>
+            <a href="https://wa.me/qr/YJUPUGU6EOGXI1"><i class="bi bi-whatsapp"></i>whatsapp</a>
+            <p>+6285655123255</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f0246" fill-opacity="1" d="M0,256L205.7,288L411.4,32L617.1,128L822.9,224L1028.6,192L1234.3,256L1440,224L1440,320L1234.3,320L1028.6,320L822.9,320L617.1,320L411.4,320L205.7,320L0,320Z"></path></svg>
+    </section>
+        <!-- end of contact -->
+<!-- footer -->
+<footer class="text-white text-center"  style="background-color:#0f0246">
+
+  <p class="fs-6 fw-bold" >Created with <span class="text-danger">♥</span></p>
+          
+</footer >
+<!-- end footer -->
+</div>
+</body>
+</html>

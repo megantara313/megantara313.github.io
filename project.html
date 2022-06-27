@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My project page</title>
+    <!-- lighbox2 -->
+    <link href="node_modules/lightbox2/src/css/lightbox.css" rel="stylesheet" />
+     <!-- favicon xD :) -->
+     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- cdn icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- end cdn icon -->
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- lighbox2 -->
+    <script src="node_modules/lightbox2/src/js/lightbox.js"></script>
+    <div class="container">
+    <script>
+       // take body to change the content
+const body = document.getElementsByTagName('body');
+// stop keyboard shortcuts
+window.addEventListener("keydown", (event) => {
+  if(event.ctrlKey && (event.key === "S" || event.key === "s")) {
+     event.preventDefault();
+     body[0].innerHTML = "sorry, you can't do this 💔"
+  }
+
+  if(event.ctrlKey && (event.key === "C")) {
+     event.preventDefault();
+     body[0].innerHTML = "sorry, you can't do this 💔"
+  }
+  if(event.ctrlKey && (event.key === "E" || event.key === "e")) {
+     event.preventDefault();
+     body[0].innerHTML = "sorry, you can't do this 💔"
+  }
+  if(event.ctrlKey && (event.key === "I" || event.key === "i")) {
+     event.preventDefault();
+     body[0].innerHTML = function myFunction() {
+  var x = document.createElement("IMG");
+  x.setAttribute("src", "img_pulpit.jpg");
+  x.setAttribute("width", "304");
+  x.setAttribute("height", "228");
+  x.setAttribute("alt", "The Pulpit Rock");
+  document.body.appendChild(x);
+}
+  }
+  if(event.ctrlKey && (event.key === "K" || event.key === "k")) {
+     event.preventDefault();
+     body[0].innerHTML = "sorry, you can't do this 💔";
+  }
+  if(event.ctrlKey && (event.key === "U" || event.key === "u")) {
+     event.preventDefault();
+     body[0].innerHTML = "sorry, you can't do this 💔";
+  }
+});
+// stop right click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+    </script>
+    <div class="container col-md">
+      <!-- navbar -->
+      <nav class="navbar sticky-top navbar navbar-dark" style="background-color:#0f0246">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fs-6 fw-bold" href="#"><i class="bi bi-box"></i>&nbsp;&nbsp;&nbsp;&nbsp;My Project</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="text-white bg-dark offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Project Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="https://github.com/geekmicrosystem"><i class="bi bi-github"></i>Page Source code</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Project List
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#ject1">Vaccination App</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#ject2">Attendence App</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#ject3">Electric Bicycle dasboard</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+      
+      <!-- lighbox1 -->
+      <div id="ject1">
+        <br>
+        <br>
+        <div class="row row-cols-10 row-cols-lg-10 g-2 g-lg-3">
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <figure class="figure">
+                <div class="row">
+                  <div class="column">
+                    <img src="img/pjt8.JPG" style="width:100%" onclick="openModal1();currentSlide1(1)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="img/pjt7.JPG" style="width:100%" onclick="openModal1();currentSlide1(2)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="img/pjt6.JPG" style="width:100%" onclick="openModal1();currentSlide1(3)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="img/pjt5.JPG" style="width:100%" onclick="openModal1();currentSlide1(4)" class="hover-shadow cursor">
+                  </div>
+                </div>
+                
+                <div id="myModal1" class="modal">
+                  <span class="close cursor" onclick="closeModal1()">&times;</span>
+                  <div class="modal-content">
+                
+                    <div class="mySlides1">
+                      <div class="numbertext">1 / 4</div>
+                      <img  src="img/pjt8.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides1">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="img/pjt7.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides1">
+                      <div class="numbertext">3 / 4</div>
+                      <img  src="img/pjt6.JPG" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides1">
+                      <div class="numbertext">4 / 4</div>
+                      <img  src="img/pjt5.JPG" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+                
+                    <div class="caption-container">
+                      <p id="caption1"></p>
+                    </div>
+                
+                
+                    <div class="column">
+                      <img id="ok1" class="demo1 cursor" src="img/pjt8.JPG" style="width:100%" onclick="currentSlide1(1)" alt="Main page">
+                    </div>
+                    <div class="column">
+                      <img id="ok2" class="demo1 cursor" src="img/pjt7.JPG" style="width:100%" onclick="currentSlide1(2)" alt="Home page">
+                    </div>
+                    <div class="column">
+                      <img id="ok3" class="demo1 cursor" src="img/pjt6.JPG" style="width:100%" onclick="currentSlide1(3)" alt="Login page">
+                    </div>
+                    <div class="column">
+                      <img id="ok4" class="demo1 cursor" src="img/pjt5.JPG" style="width:100%" onclick="currentSlide1(4)" alt="Registration page">
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="figure-caption text-end">Vaccination App with Create Read Update Delete(CRUD)</figcaption>
+              </figure>
+              <p>In this project, it was created to fulfill requests for vaccination participants who register online with the aim of accelerating the vaccination registration process held by the provincial government of East Java and the Ministry of Health of the Republic of Indonesia.
+                This online vaccination registration application uses CRUD by storing data for each registrant in a database.
+                This application is made using the CSS framework, namely Bootstrap and PHP5.
+              </p> 
+              <a class="nav-link active" href="https://github.com/geekmicrosystem/vaksinisasi"><i class="bi bi-github"></i>Github</a> 
+            </div>
+          </div>
+      </div>
+    </div>
+      <!-- end lighbox1 -->
+
+      <!-- project2 -->
+      <div id="ject2">
+        <br>
+        <br>
+        <div class="row row-cols-10 row-cols-lg-10 g-2 g-lg-3">
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <figure class="figure">
+                <div class="row">
+                  <div class="column">
+                    <img src="img/pjt3.JPG" style="width:100%" onclick="openModal2();currentSlide2(1)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="img/pjt2.JPG" style="width:100%" onclick="openModal2();currentSlide2(2)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="img/pjt1.JPG" style="width:100%" onclick="openModal2();currentSlide2(3)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="img/db.JPG" style="width:100%" onclick="openModal2();currentSlide2(4)" class="hover-shadow cursor">
+                  </div>
+                </div>
+               
+                 <div id="myModal2" class="modal">
+                  <span class="close cursor" onclick="closeModal2()">&times;</span>
+                  <div class="modal-content">
+                
+                    <div class="mySlides2">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="img/pjt3.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides2">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="img/pjt2.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides2">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="img/pjt1.JPG" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides2">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="img/db.JPG" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                
+                    <div class="caption-container">
+                      <p id="caption2"></p>
+                    </div>
+                
+                
+                    <div class="column">
+                      <img class="demo2 cursor" src="img/pjt3.JPG" style="width:100%" onclick="currentSlide2(1)" alt="Main page">
+                    </div>
+                    <div class="column">
+                      <img class="demo2 cursor" src="img/pjt2.JPG" style="width:100%" onclick="currentSlide2(2)" alt="Login page">
+                    </div>
+                    <div class="column">
+                      <img class="demo2 cursor" src="img/pjt1.JPG" style="width:100%" onclick="currentSlide2(3)" alt="Registration page">
+                    </div>
+                    <div class="column">
+                      <img class="demo2 cursor" src="img/db.JPG" style="width:100%" onclick="currentSlide2(4)" alt="Database on phpmadmin">
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="figure-caption text-end">Online Registration App with Create Read Update Delete(CRUD)</figcaption>
+              </figure>
+            <p>
+              in this project, an online registration system was created to meet the request of the East Java 
+              provincial government to meet the needs of training institution agencies. In this application prospective participants can register according to
+               personal data on each participant's ID card. After registering participants are required to login to go to the main page. Here The completed participant data will appear along with the chosen 
+              training vocational. This website-based application uses CRUD (Cread read update delete).
+              This application is designed using Bootstrap version 5 and PHP version 5.
+            </p>  
+            <a class="nav-link active" href="https://github.com/geekmicrosystem/sistem_pendaftaran"><i class="bi bi-github"></i>Github</a>
+                
+            </div>
+          </div>
+      </div>
+    </div>
+      <!-- end of project2 -->
+
+      <!-- project3 -->
+      <div id="ject3">
+        <br>
+        <br>
+        <div class="row row-cols-10 row-cols-lg-10 g-2 g-lg-3">
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <figure class="figure">
+                <div class="row">
+                  <div class="column">
+                    <img src="img/dsb1.JPG" style="width:100%" onclick="openModal3();currentSlide3(1)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="img/db2.JPG" style="width: 100%" onclick="openModal3();currentSlide3(2)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="img/crop1.jpg" style="width:100%" onclick="openModal3();currentSlide3(3)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="img/db4.JPG" style="width:100%" onclick="openModal3();currentSlide3(4)" class="hover-shadow cursor">
+                  </div>
+                </div>
+                
+                <div id="myModal3" class="modal">
+                  <span class="close cursor" onclick="closeModal3()">&times;</span>
+                  <div class="modal-content">
+                
+                    <div class="mySlides3">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="img/dsb1.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides3">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="img/db2.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides3">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="img/crop1.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides3">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="img/db4.JPG" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                
+                    <div class="caption-container">
+                      <p id="caption3"></p>
+                    </div>
+                
+                
+                    <div class="column">
+                      <img class="demo3 cursor" src="img/dsb1.JPG" style="width:100%" onclick="currentSlide3(1)" alt="Design 3d on inventor CAD">
+                    </div>
+                    <div class="column">
+                      <img class="demo3 cursor" src="img/db2.JPG" style="width:100%" onclick="currentSlide3(2)" alt="Dasboard display">
+                    </div>
+                    <div class="column">
+                      <img class="demo3 cursor" src="img/crop1.jpg" style="width:100%" onclick="currentSlide3(3)" alt="Dashboard displays each sensor value that is read">
+                    </div>
+                    <div class="column">
+                      <img class="demo3 cursor" src="img/db4.JPG" style="width:100%" onclick="currentSlide3(4)" alt="Dasboard hardwere with IOT(Internet of think)">
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="figure-caption text-end">Hardwere Electric bicycle dasboard with IOT(Internet Of Think) </figcaption>
+              </figure>
+             <p>This project is a final project to obtain a D3 degree from the State Electronics Polytechnic of Surabaya.
+              This dashboard uses esp32 hardware (Internet of think) with c programming language.The hardware of this dashboard is designed using EAGLE software as hardware design software. 
+              For casing design using the CAD Inventor application. And for the IDE application the ESP32 program uses Arduino IDE.
+              In this project I was one of the students involved from 3 other students in the collaboration of the Surabaya 
+              Electronics Polytechnic with PT. Insera Sena. In that collaboration I played a role in the electric bicycle 
+              dashboard development division Even though I was working on a project in the Covid-19 pandemic,
+               in the end, with the guidance of the lecturer, I was able to complete the dashboard on time.
+              </p>
+              <br>
+              <br>
+              <br>
+              <div>
+                <h1 style=" font-size: 20px;">Simulation how does the dashboard work on a Electric bicycle</h1>
+                <iframe width="420" height="345" src="https://www.youtube.com/watch?v=ZCHx9XaTRjE"></iframe>
+              </div>
+             
+              <a class="vu nav-link active" href="https://github.com/geekmicrosystem/electric-bicycle-dasboard-IOT-source-code"><i class="bi bi-github"></i>Github</a>
+              <a class="vu nav-link active" href="https://grabcad.com/library/electric-bike-battery-1"><i class="bi bi-grip-horizontal"></i>Grabcad</a>    
+            </div>
+          </div>
+      </div>
+    </div>
+      <!-- end of project3 -->
+  <!-- script js modal image2 -->
+  <script>
+    //  for lighbox1
+    function openModal1() {
+      document.getElementById("myModal1").style.display = "block";
+    }
+    
+    function closeModal1() {
+      document.getElementById("myModal1").style.display = "none";
+    }
+// -------------------------
+    var slideIndex1 = 1;
+    showSlides1(slideIndex1);
+    
+    function plusSlides1(n) {
+      showSlides1(slideIndex1 += n);
+    }
+    
+    function currentSlide1(n) {
+      showSlides1(slideIndex1 = n);
+    }
+ // lighbox1
+ function showSlides1(n) {
+      var i;
+      var slides1 = document.getElementsByClassName("mySlides1");
+      var dots1 = document.getElementsByClassName("demo1");
+      var captionText1 = document.getElementById("caption1");
+      // var x1 = document.getElementById("ok1").alt;
+      // var x2 = document.getElementById("ok2").alt;
+      // var x3 = document.getElementById("ok3").alt;
+      // var x4 = document.getElementById("ok4").alt;
+// lighbox 1
+      if (n > slides1.length) {slideIndex1 = 1}
+      if (n < 1) {slideIndex1 = slides1.length}
+      for (i = 0; i < slides1.length; i++) {
+          slides1[i].style.display = "none";
+      }
+      for (i = 0; i < dots1.length; i++) {
+          dots1[i].className = dots1[i].className.replace(" active", "");
+      }
+      slides1[slideIndex1-1].style.display = "block";
+      dots1[slideIndex1-1].className += " active";
+      captionText1.innerHTML = dots1[slideIndex1-1].alt;
+    }
+
+    // ---------------------------------------
+    // ---------------------------------------
+    // ---------------------------------------
+   //  =======================================
+    // for lighbox2
+    function openModal2() {
+      document.getElementById("myModal2").style.display = "block";
+    }
+    
+    function closeModal2() {
+      document.getElementById("myModal2").style.display = "none";
+    }
+   //  --------------------
+    var slideIndex2 = 1;
+    showSlides2(slideIndex2);
+    
+    function plusSlides2(u) {
+      showSlides2(slideIndex2 += u);
+    }
+    
+    function currentSlide2(u) {
+      showSlides2(slideIndex2 = u);
+    }
+     // lighbox2
+     function showSlides2(u){
+      var j;
+      var slides2 = document.getElementsByClassName("mySlides2");
+      var dots2 = document.getElementsByClassName("demo2");
+      var captionText2 = document.getElementById("caption2");
+
+      // lighbox 2
+      if (u > slides2.length) {slideIndex2 = 1}
+      if (u < 1) {slideIndex2 = slides2.length}
+      for (j = 0; j < slides2.length; j++) {
+          slides2[j].style.display = "none";
+      }
+      for (j = 0; j < dots2.length; j++) {
+          dots2[j].className = dots2[j].className.replace(" active", "");
+      }
+      slides2[slideIndex2-1].style.display = "block";
+      dots2[slideIndex2-1].className += " active";
+      captionText2.innerHTML = dots2[slideIndex2-1].alt;
+    }
+    // ---------------------------------------
+    // ---------------------------------------
+   //  =======================================
+    // for lighbox3
+    function openModal3() {
+      document.getElementById("myModal3").style.display = "block";
+    }
+    
+    function closeModal3() {
+      document.getElementById("myModal3").style.display = "none";
+    }
+   //  --------------------
+    var slideIndex3 = 1;
+    showSlides3(slideIndex3);
+    
+    function plusSlides3(p) {
+      showSlides3(slideIndex3 += p);
+    }
+    
+    function currentSlide3(p) {
+      showSlides3(slideIndex3 = p);
+    }
+     // lighbox3
+     function showSlides3(p){
+      var k;
+      var slides3 = document.getElementsByClassName("mySlides3");
+      var dots3 = document.getElementsByClassName("demo3");
+      var captionText3 = document.getElementById("caption3");
+
+      // lighbox 3
+      if (p > slides3.length) {slideIndex3 = 1}
+      if (p < 1) {slideIndex3 = slides3.length}
+      for (k = 0; k < slides3.length; k++) {
+          slides3[k].style.display = "none";
+      }
+      for (k = 0; k < dots3.length; k++) {
+          dots3[k].className = dots3[k].className.replace(" active", "");
+      }
+      slides3[slideIndex3-1].style.display = "block";
+      dots3[slideIndex3-1].className += " active";
+      captionText3.innerHTML = dots3[slideIndex3-1].alt;
+    }
+  </script>
+    </div>
+  </body>
+</html>
